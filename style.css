@@ -1,0 +1,407 @@
+/* Reset básico */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #fff8f0; /* Fundo claro e convidativo */
+
+    color: #333;
+
+}
+
+.container {
+
+    width: 90%;
+
+    margin: auto;
+
+    padding: 20px 0;
+
+}
+
+/* Header com imagem de fundo */
+
+header {
+
+    background-image: url('https://i.ibb.co/PZVC0gQ9/Screenshot-2025-02-24-18-18-57-600-com-android-chrome-edit.jpg');
+
+    background-size: cover; /* Cobrir toda a área do cabeçalho */
+
+    background-position: center; /* Centralizar a imagem */
+
+    color: #fff;
+
+    padding: 100px 0; /* Aumentei o padding para destacar o fundo */
+
+    text-align: center;
+
+    border-bottom: 5px solid #e65c00; /* Laranja mais escuro para contraste */
+
+    position: relative;
+
+}
+
+/* Overlay escuro para melhorar a legibilidade do texto */
+
+header::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.7); /* Overlay escuro */
+
+}
+
+header .container {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+header h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+}
+
+header h2 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+}
+
+header p {
+
+    font-size: 18px;
+
+}
+
+/* Seções */
+
+.about, .details, .contact, .posters, .location {
+
+    background: #fff;
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.about h2, .details h2, .contact h2, .posters h2, .location h2 {
+
+    font-size: 26px;
+
+    color: #ff6f00; /* Laranja mais escuro */
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+}
+
+/* Estilo para as subdivisões do evento */
+
+.event-schedule {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.event-day {
+
+    background: #ffe5cc; /* Laranja claro e suave */
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.event-day h3 {
+
+    font-size: 20px;
+
+    color: #ff6f00; /* Laranja mais escuro */
+
+    margin-bottom: 10px;
+
+}
+
+.event-day p {
+
+    font-size: 16px;
+
+    color: #333;
+
+}
+
+/* Estilo para a seção de cartazes promocionais */
+
+.posters {
+
+    background: #fff;
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.poster-gallery {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.poster-image {
+
+    width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+
+    border-radius: 10px; /* Bordas arredondadas */
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+/* Estilo para a seção de localização */
+
+.location .address-box {
+
+    background: #ffe5cc; /* Laranja claro e suave */
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.location .address-box p {
+
+    font-size: 18px;
+
+    color: #333;
+
+    margin: 0;
+
+}
+
+.location .map-container {
+
+    width: 100%;
+
+    height: 300px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.location iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+}
+
+/* Contato */
+
+.contact p {
+
+    font-size: 16px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.contact a {
+
+    color: #ff6f00; /* Laranja mais escuro */
+
+    text-decoration: none;
+
+}
+
+.contact a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* Estilo para o botão "Ver no Mapa" (tamanho reduzido pela metade) */
+
+.hotel-button {
+
+    background: #ff6f00; /* Laranja mais escuro */
+
+    color: #fff;
+
+    padding: 5px 10px; /* Reduzido pela metade */
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 14px; /* Fonte um pouco menor */
+
+    text-align: center;
+
+    display: inline-block;
+
+    width: 100%;
+
+    max-width: 100px; /* Largura máxima reduzida pela metade */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+.hotel-button:hover {
+
+    background: #e65c00; /* Laranja mais escuro ao passar o mouse */
+
+    transform: translateY(-2px); /* Efeito de levantar o botão */
+
+}
+
+.hotel-button:active {
+
+    transform: translateY(0); /* Efeito de pressionar o botão */
+
+}
+
+.section-box {
+
+    background: #fff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 20px;
+
+}
+
+/* Estilo para a seção de Pastores */
+.pastores .section-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pastor-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.pastor-image {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px;
+    border-radius: 40%; /* Imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    border: 3px solid #ff6f00; /* Borda laranja */
+}
+
+.pastor-text h3 {
+    font-size: 24px;
+    color: #ff6f00; /* Laranja mais escuro */
+    margin-bottom: 10px;
+}
+
+.pastor-text p {
+    font-size: 16px;
+    color: #333;
+}
+ 
+/* Footer */
+
+footer {
+
+    background: #e65c00; /* Laranja mais escuro */
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 15px 0;
+
+    margin-top: 20px;
+
+}
+
+footer p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
